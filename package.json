@@ -1,0 +1,20 @@
+{
+  "name": "newpostblog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass --watch src/scss/style.scss dist/css/style.css",
+    "minify": "node-sass src/scss/style.scss dist/css/style.css --output-style compressed",
+    "build": "webpack --mode production src/js/script.js --output dist/js/main.js",
+    "dev": "webpack --mode development src/js/script.js --output dist/js/main.js --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
+  }
+}
